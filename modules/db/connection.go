@@ -7,6 +7,7 @@ package db
 import (
 	"database/sql"
 	"fmt"
+	"gorm.io/gorm"
 	"strings"
 
 	"github.com/wangxx2026/go-admin/modules/config"
@@ -69,7 +70,8 @@ type Connection interface {
 	GetDelimiters() []string
 
 	GetDB(key string) *sql.DB
-
+	GetGormDB(key string) *gorm.DB
+	
 	GetConfig(name string) config.Database
 
 	CreateDB(name string, beans ...interface{}) error
