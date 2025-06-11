@@ -6,8 +6,9 @@ package db
 
 import (
 	"database/sql"
-
 	"github.com/GoAdminGroup/go-admin/modules/config"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
 // SQLTx is an in-progress database transaction.
@@ -55,15 +56,18 @@ func (db *Mysql) InitDB(cfgs map[string]config.Database) Connection {
 	db.Once.Do(func() {
 		for conn, cfg := range cfgs {
 
-			sqlDB, err := sql.Open("mysql", cfg.GetDSN())
+			sqlDBTmp, err := gorm.Open(mysql.Open(cfg.GetDSN()))
 
+			if err != nil {
+				panic(err)
+			}
+			sqlDB, err := sqlDBTmp.DB()
 			if err != nil {
 				if sqlDB != nil {
 					_ = sqlDB.Close()
 				}
 				panic(err)
 			}
-
 			// Largest set up the database connection reduce time wait
 			sqlDB.SetMaxIdleConns(cfg.MaxIdleConns)
 			sqlDB.SetMaxOpenConns(cfg.MaxOpenConns)
