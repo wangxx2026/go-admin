@@ -25,7 +25,8 @@ type Mysql struct {
 func GetMysqlDB() *Mysql {
 	return &Mysql{
 		Base: Base{
-			DbList: make(map[string]*sql.DB),
+			DbList:   make(map[string]*sql.DB),
+			GormList: make(map[string]*gorm.DB),
 		},
 	}
 }

@@ -13,7 +13,7 @@ import (
 	// add mssql driver
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/wangxx2026/themes/adminlte"
 
 	"net/http"
 	"os"

@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"time"
 
-	_ "github.com/GoAdminGroup/themes/adminlte"
 	_ "github.com/wangxx2026/go-admin/adapter/echo"
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mysql"
+	_ "github.com/wangxx2026/themes/adminlte"
 
 	"github.com/labstack/echo/v4"
 	"github.com/wangxx2026/go-admin/engine"

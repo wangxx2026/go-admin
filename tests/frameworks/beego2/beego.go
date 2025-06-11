@@ -15,7 +15,6 @@ import (
 	// add mssql driver
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mssql"
 
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/beego/beego/v2/server/web"
 	"github.com/wangxx2026/go-admin/engine"
 	"github.com/wangxx2026/go-admin/modules/config"
@@ -26,6 +25,7 @@ import (
 	"github.com/wangxx2026/go-admin/template"
 	"github.com/wangxx2026/go-admin/template/chartjs"
 	"github.com/wangxx2026/go-admin/tests/tables"
+	"github.com/wangxx2026/themes/adminlte"
 )
 
 func internalHandler() http.Handler {

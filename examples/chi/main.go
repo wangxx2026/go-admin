@@ -12,7 +12,6 @@ import (
 	_ "github.com/wangxx2026/go-admin/adapter/chi"
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mysql"
 
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/go-chi/chi"
 	"github.com/wangxx2026/go-admin/engine"
 	"github.com/wangxx2026/go-admin/examples/datamodel"
@@ -21,6 +20,7 @@ import (
 	"github.com/wangxx2026/go-admin/plugins/example"
 	"github.com/wangxx2026/go-admin/template"
 	"github.com/wangxx2026/go-admin/template/chartjs"
+	"github.com/wangxx2026/themes/adminlte"
 )
 
 func main() {

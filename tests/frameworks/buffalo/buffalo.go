@@ -2,11 +2,11 @@ package buffalo
 
 import (
 	// add buffalo adapter
-	"github.com/GoAdminGroup/themes/adminlte"
 	_ "github.com/wangxx2026/go-admin/adapter/buffalo"
 	"github.com/wangxx2026/go-admin/modules/config"
 	"github.com/wangxx2026/go-admin/modules/language"
 	"github.com/wangxx2026/go-admin/plugins/admin/modules/table"
+	"github.com/wangxx2026/themes/adminlte"
 
 	// add mysql driver
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mysql"
@@ -17,7 +17,7 @@ import (
 	// add mssql driver
 	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
-	_ "github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/wangxx2026/themes/adminlte"
 
 	"github.com/wangxx2026/go-admin/template"
 	"github.com/wangxx2026/go-admin/template/chartjs"
