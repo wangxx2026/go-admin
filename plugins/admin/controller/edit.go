@@ -6,23 +6,23 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/wangxx2026/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/template"
+	"github.com/wangxx2026/go-admin/template"
 
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/response"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/file"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
+	"github.com/wangxx2026/go-admin/context"
+	"github.com/wangxx2026/go-admin/modules/auth"
+	"github.com/wangxx2026/go-admin/modules/file"
+	"github.com/wangxx2026/go-admin/modules/language"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/constant"
+	form2 "github.com/wangxx2026/go-admin/plugins/admin/modules/form"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/guard"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/parameter"
+	"github.com/wangxx2026/go-admin/template/types"
+	"github.com/wangxx2026/go-admin/template/types/form"
 )
 
 // ShowForm show form page.

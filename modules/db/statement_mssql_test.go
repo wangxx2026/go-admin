@@ -3,8 +3,8 @@ package db
 import (
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mssql"
+	"github.com/wangxx2026/go-admin/modules/config"
+	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mssql"
 )
 
 var driverTestMssqlConn Connection

@@ -6,7 +6,7 @@ package db
 
 import (
 	"database/sql"
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/modules/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -75,6 +75,7 @@ func (db *Mysql) InitDB(cfgs map[string]config.Database) Connection {
 			sqlDB.SetConnMaxIdleTime(cfg.ConnMaxIdleTime)
 
 			db.DbList[conn] = sqlDB
+			db.GormList[conn] = sqlDBTmp
 
 			if err := sqlDB.Ping(); err != nil {
 				panic(err)

@@ -15,28 +15,28 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/template/icon"
-	"github.com/GoAdminGroup/go-admin/template/types/action"
+	"github.com/wangxx2026/go-admin/modules/language"
+	"github.com/wangxx2026/go-admin/template/icon"
+	"github.com/wangxx2026/go-admin/template/types/action"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	"github.com/GoAdminGroup/go-admin/modules/menu"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/modules/system"
-	"github.com/GoAdminGroup/go-admin/modules/ui"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/wangxx2026/go-admin/adapter"
+	"github.com/wangxx2026/go-admin/context"
+	"github.com/wangxx2026/go-admin/modules/auth"
+	"github.com/wangxx2026/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/modules/db"
+	"github.com/wangxx2026/go-admin/modules/errors"
+	"github.com/wangxx2026/go-admin/modules/logger"
+	"github.com/wangxx2026/go-admin/modules/menu"
+	"github.com/wangxx2026/go-admin/modules/service"
+	"github.com/wangxx2026/go-admin/modules/system"
+	"github.com/wangxx2026/go-admin/modules/ui"
+	"github.com/wangxx2026/go-admin/plugins"
+	"github.com/wangxx2026/go-admin/plugins/admin"
+	"github.com/wangxx2026/go-admin/plugins/admin/models"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/response"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/table"
+	"github.com/wangxx2026/go-admin/template"
+	"github.com/wangxx2026/go-admin/template/types"
 )
 
 // Engine is the core component of goAdmin. It has two attributes.
@@ -48,6 +48,7 @@ type Engine struct {
 	PluginList   plugins.Plugins
 	Adapter      adapter.WebFrameWork
 	Services     service.List
+	OrmList      service.List
 	NavButtons   *types.Buttons
 	config       *config.Config
 	announceLock sync.Once

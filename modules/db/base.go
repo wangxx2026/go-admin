@@ -3,17 +3,19 @@ package db
 import (
 	"database/sql"
 	"errors"
+	"gorm.io/gorm"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/modules/config"
 	"xorm.io/xorm"
 )
 
 // Base is a common Connection.
 type Base struct {
-	DbList  map[string]*sql.DB
-	Once    sync.Once
-	Configs config.DatabaseList
+	DbList   map[string]*sql.DB
+	GormList map[string]*gorm.DB
+	Once     sync.Once
+	Configs  config.DatabaseList
 }
 
 // Close implements the method Connection.Close.

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/tests/common"
 	"github.com/gavv/httpexpect"
+	"github.com/wangxx2026/go-admin/tests/common"
 )
 
 func TestGofiber(t *testing.T) {

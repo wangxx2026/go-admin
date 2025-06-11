@@ -6,17 +6,17 @@ import (
 	"os"
 	"testing"
 
-	_ "github.com/GoAdminGroup/go-admin/adapter/gin"
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql"
 	_ "github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/wangxx2026/go-admin/adapter/gin"
+	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mysql"
 
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/tests/tables"
 	"github.com/gin-gonic/gin"
+	"github.com/wangxx2026/go-admin/engine"
+	"github.com/wangxx2026/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/plugins/admin"
+	"github.com/wangxx2026/go-admin/template"
+	"github.com/wangxx2026/go-admin/template/chartjs"
+	"github.com/wangxx2026/go-admin/tests/tables"
 )
 
 const (

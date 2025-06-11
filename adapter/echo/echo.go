@@ -11,15 +11,15 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/labstack/echo/v4"
+	"github.com/wangxx2026/go-admin/adapter"
+	"github.com/wangxx2026/go-admin/context"
+	"github.com/wangxx2026/go-admin/engine"
+	"github.com/wangxx2026/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/plugins"
+	"github.com/wangxx2026/go-admin/plugins/admin/models"
+	"github.com/wangxx2026/go-admin/plugins/admin/modules/constant"
+	"github.com/wangxx2026/go-admin/template/types"
 )
 
 // Echo structure value is an Echo GoAdmin adapter.

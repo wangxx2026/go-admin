@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql"
 	"github.com/magiconair/properties/assert"
+	"github.com/wangxx2026/go-admin/modules/config"
+	_ "github.com/wangxx2026/go-admin/modules/db/drivers/mysql"
 )
 
 const (

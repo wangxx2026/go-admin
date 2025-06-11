@@ -3,8 +3,8 @@ package display
 import (
 	"html/template"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/wangxx2026/go-admin/context"
+	"github.com/wangxx2026/go-admin/template/types"
 )
 
 type Dot struct {
