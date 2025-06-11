@@ -1,4 +1,4 @@
-module go-admin
+module github.com/wangxx2026/go-admin
 
 go 1.24.3
 
@@ -28,7 +28,6 @@ require (
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
-	github.com/wangxx2026/go-admin v1.0.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
 	go.uber.org/zap v1.19.1 // indirect
