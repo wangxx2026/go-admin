@@ -31,6 +31,9 @@ func (db *Base) Close() []error {
 func (db *Base) GetDB(key string) *sql.DB {
 	return db.DbList[key]
 }
+func (db *Base) GetGormDB(key string) *gorm.DB {
+	return db.GormList[key]
+}
 
 func (db *Base) CreateDB(name string, beans ...interface{}) error {
 	cfg := db.GetConfig(name)
