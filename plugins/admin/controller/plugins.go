@@ -16,7 +16,7 @@ import (
 
 	"github.com/wangxx2026/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/html"
+	"github.com/wangxx2026/html"
 	"github.com/gin-gonic/gin"
 	"github.com/wangxx2026/go-admin/context"
 	"github.com/wangxx2026/go-admin/modules/auth"

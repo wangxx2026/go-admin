@@ -11,7 +11,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/html"
 	"github.com/wangxx2026/go-admin/context"
 	"github.com/wangxx2026/go-admin/modules/collection"
 	"github.com/wangxx2026/go-admin/modules/config"
@@ -31,6 +30,7 @@ import (
 	"github.com/wangxx2026/go-admin/template/types/action"
 	"github.com/wangxx2026/go-admin/template/types/form"
 	selection "github.com/wangxx2026/go-admin/template/types/form/select"
+	"github.com/wangxx2026/html"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/text/cases"
 	textLang "golang.org/x/text/language"

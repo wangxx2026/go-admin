@@ -3,7 +3,7 @@ package display
 import (
 	"strings"
 
-	"github.com/GoAdminGroup/html"
+	"github.com/wangxx2026/html"
 	"github.com/wangxx2026/go-admin/context"
 	"github.com/wangxx2026/go-admin/template/icon"
 	"github.com/wangxx2026/go-admin/template/types"

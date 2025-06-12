@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/GoAdminGroup/html"
+	"github.com/wangxx2026/html"
 	"github.com/wangxx2026/go-admin/context"
 	"github.com/wangxx2026/go-admin/modules/auth"
 	"github.com/wangxx2026/go-admin/modules/errors"
