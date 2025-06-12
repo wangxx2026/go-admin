@@ -7,8 +7,10 @@ package db
 import (
 	"database/sql"
 	"github.com/wangxx2026/go-admin/modules/config"
+	"github.com/wangxx2026/go-admin/modules/logger"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	gormlogger "gorm.io/gorm/logger"
 )
 
 // SQLTx is an in-progress database transaction.
@@ -54,10 +56,17 @@ func (db *Mysql) GetDelimiters() []string {
 // InitDB implements the method Connection.InitDB.
 func (db *Mysql) InitDB(cfgs map[string]config.Database) Connection {
 	db.Configs = cfgs
+	isLog := config.GetSqlLog()
+
 	db.Once.Do(func() {
 		for conn, cfg := range cfgs {
+			logger.Info("[GoAdmin] Connecting to mysql database " + cfg.Name + "...")
+			opts := &gorm.Config{}
+			if isLog {
+				opts.Logger = gormlogger.Default.LogMode(gormlogger.Info)
+			}
 
-			sqlDBTmp, err := gorm.Open(mysql.Open(cfg.GetDSN()))
+			sqlDBTmp, err := gorm.Open(mysql.Open(cfg.GetDSN()), opts)
 
 			if err != nil {
 				panic(err)
