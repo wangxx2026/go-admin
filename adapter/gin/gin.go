@@ -153,7 +153,7 @@ func (gins *Gin) Method() string {
 
 // FormParam implements the method Adapter.FormParam.
 func (gins *Gin) FormParam() url.Values {
-	_ = gins.ctx.Request.ParseMultipartForm(32 << 20)
+	//_ = gins.ctx.Request.ParseMultipartForm(32 << 20)
 	return gins.ctx.Request.PostForm
 }
 
